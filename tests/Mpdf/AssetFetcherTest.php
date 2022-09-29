@@ -6,7 +6,7 @@ use Mockery;
 
 use Mpdf\File\LocalContentLoaderInterface;
 use Mpdf\Http\ClientInterface;
-use Psr\Log\NullLogger;
+use Psr2\Log\NullLogger;
 
 class AssetFetcherTest extends \Yoast\PHPUnitPolyfills\TestCases\TestCase
 {

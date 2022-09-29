@@ -14,8 +14,9 @@ use Mpdf\QrCode;
 use Mpdf\Utils\Arrays;
 use Mpdf\Utils\NumericString;
 use Mpdf\Utils\UtfString;
-use Psr\Log\LoggerInterface;
-use Psr\Log\NullLogger;
+use Psr2\Log\LoggerInterface;
+use Psr2\Log\NullLogger;
+use Psr2\Log\LoggerAwareInterface;
 
 /**
  * mPDF, PHP library generating PDF files from UTF-8 encoded HTML
@@ -25,7 +26,7 @@ use Psr\Log\NullLogger;
  *
  * @license GPL-2.0
  */
-class Mpdf implements \Psr\Log\LoggerAwareInterface
+class Mpdf implements LoggerAwareInterface
 {
 
 	use Strict;
@@ -967,7 +968,7 @@ class Mpdf implements \Psr\Log\LoggerAwareInterface
 	private $scriptToLanguage;
 
 	/**
-	 * @var \Psr\Log\LoggerInterface
+	 * @var \Psr2\Log\LoggerInterface
 	 */
 	private $logger;
 
@@ -1580,7 +1581,7 @@ class Mpdf implements \Psr\Log\LoggerAwareInterface
 	}
 
 	/**
-	 * @param \Psr\Log\LoggerInterface
+	 * @param \Psr2\Log\LoggerInterface
 	 *
 	 * @return \Mpdf\Mpdf
 	 */
@@ -1589,7 +1590,7 @@ class Mpdf implements \Psr\Log\LoggerAwareInterface
 		$this->logger = $logger;
 
 		foreach ($this->services as $name) {
-			if ($this->$name && $this->$name instanceof \Psr\Log\LoggerAwareInterface) {
+			if ($this->$name && $this->$name instanceof \Psr2\Log\LoggerAwareInterface) {
 				$this->$name->setLogger($logger);
 			}
 		}

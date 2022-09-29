@@ -2,10 +2,10 @@
 
 namespace Mpdf;
 
-use Psr\Log\LoggerInterface;
+use Psr2\Log\LoggerInterface;
 use Mpdf\Log\Context as LogContext;
 
-class SizeConverter implements \Psr\Log\LoggerAwareInterface
+class SizeConverter implements \Psr2\Log\LoggerAwareInterface
 {
 
 	private $dpi;
@@ -18,7 +18,7 @@ class SizeConverter implements \Psr\Log\LoggerAwareInterface
 	private $mpdf;
 
 	/**
-	 * @var \Psr\Log\LoggerInterface
+	 * @var \Psr2\Log\LoggerInterface
 	 */
 	private $logger;
 

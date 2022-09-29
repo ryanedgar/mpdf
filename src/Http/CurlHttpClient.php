@@ -5,9 +5,9 @@ namespace Mpdf\Http;
 use Mpdf\Log\Context as LogContext;
 use Mpdf\Mpdf;
 use Psr\Http\Message\RequestInterface;
-use Psr\Log\LoggerInterface;
+use Psr2\Log\LoggerInterface;
 
-class CurlHttpClient implements \Mpdf\Http\ClientInterface, \Psr\Log\LoggerAwareInterface
+class CurlHttpClient implements \Mpdf\Http\ClientInterface, \Psr2\Log\LoggerAwareInterface
 {
 
 	private $mpdf;

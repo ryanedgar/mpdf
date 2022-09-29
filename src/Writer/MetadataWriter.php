@@ -8,9 +8,9 @@ use Mpdf\Mpdf;
 use Mpdf\Pdf\Protection;
 use Mpdf\Utils\PdfDate;
 
-use Psr\Log\LoggerInterface;
+use Psr2\Log\LoggerInterface;
 
-class MetadataWriter implements \Psr\Log\LoggerAwareInterface
+class MetadataWriter implements \Psr2\Log\LoggerAwareInterface
 {
 
 	use Strict;
@@ -36,7 +36,7 @@ class MetadataWriter implements \Psr\Log\LoggerAwareInterface
 	private $protection;
 
 	/**
-	 * @var \Psr\Log\LoggerInterface
+	 * @var \Psr2\Log\LoggerInterface
 	 */
 	private $logger;
 

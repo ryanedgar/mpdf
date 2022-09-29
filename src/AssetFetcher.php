@@ -7,9 +7,9 @@ use Mpdf\File\StreamWrapperChecker;
 use Mpdf\Http\ClientInterface;
 use Mpdf\Http\Request;
 use Mpdf\Log\Context as LogContext;
-use Psr\Log\LoggerInterface;
+use Psr2\Log\LoggerInterface;
 
-class AssetFetcher implements \Psr\Log\LoggerAwareInterface
+class AssetFetcher implements \Psr2\Log\LoggerAwareInterface
 {
 
 	private $mpdf;

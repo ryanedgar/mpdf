@@ -3,7 +3,7 @@
 namespace Mpdf;
 
 use Mockery;
-use Psr\Log\NullLogger;
+use Psr2\Log\NullLogger;
 
 class SizeConverterTest extends \Yoast\PHPUnitPolyfills\TestCases\TestCase
 {

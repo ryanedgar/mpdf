@@ -2,7 +2,7 @@
 
 namespace Mpdf\Http;
 
-use Psr\Log\NullLogger;
+use Psr2\Log\NullLogger;
 
 class SocketHttpClientTest extends \Yoast\PHPUnitPolyfills\TestCases\TestCase
 {

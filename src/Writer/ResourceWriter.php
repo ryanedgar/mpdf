@@ -4,9 +4,9 @@ namespace Mpdf\Writer;
 
 use Mpdf\Strict;
 use Mpdf\Mpdf;
-use Psr\Log\LoggerInterface;
+use Psr2\Log\LoggerInterface;
 
-final class ResourceWriter implements \Psr\Log\LoggerAwareInterface
+final class ResourceWriter implements \Psr2\Log\LoggerAwareInterface
 {
 
 	use Strict;
@@ -67,7 +67,7 @@ final class ResourceWriter implements \Psr\Log\LoggerAwareInterface
 	private $javaScriptWriter;
 
 	/**
-	 * @var \Psr\Log\LoggerInterface
+	 * @var \Psr2\Log\LoggerInterface
 	 */
 	private $logger;
 
@@ -245,7 +245,7 @@ final class ResourceWriter implements \Psr\Log\LoggerAwareInterface
 	}
 
 	/**
-	 * @param \Psr\Log\LoggerInterface $logger
+	 * @param \Psr2\Log\LoggerInterface $logger
 	 *
 	 * @return void
 	 */

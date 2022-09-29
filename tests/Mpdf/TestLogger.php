@@ -5,7 +5,7 @@ namespace Mpdf;
 /**
  * Copied from PSR repository where not available since 2.x
  */
-class TestLogger extends \Psr\Log\AbstractLogger
+class TestLogger extends \Psr2\Log\AbstractLogger
 {
 
 	/**

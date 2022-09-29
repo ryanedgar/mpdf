@@ -8,7 +8,7 @@ use Mpdf\Log\Context as LogContext;
 use Mpdf\Mpdf;
 use Mpdf\Output\Destination;
 
-use Psr\Log\NullLogger;
+use Psr2\Log\NullLogger;
 
 class Issue779Test extends \Mpdf\BaseMpdfTest
 {

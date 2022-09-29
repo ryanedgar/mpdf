@@ -25,7 +25,7 @@ use Mpdf\Writer\MetadataWriter;
 use Mpdf\Writer\OptionalContentWriter;
 use Mpdf\Writer\PageWriter;
 use Mpdf\Writer\ResourceWriter;
-use Psr\Log\LoggerInterface;
+use Psr2\Log\LoggerInterface;
 
 class ServiceFactory
 {

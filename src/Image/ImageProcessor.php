@@ -14,9 +14,9 @@ use Mpdf\Log\Context as LogContext;
 use Mpdf\Mpdf;
 use Mpdf\Otl;
 use Mpdf\SizeConverter;
-use Psr\Log\LoggerInterface;
+use Psr2\Log\LoggerInterface;
 
-class ImageProcessor implements \Psr\Log\LoggerAwareInterface
+class ImageProcessor implements \Psr2\Log\LoggerAwareInterface
 {
 
 	/**
@@ -90,7 +90,7 @@ class ImageProcessor implements \Psr\Log\LoggerAwareInterface
 	private $assetFetcher;
 
 	/**
-	 * @var \Psr\Log\LoggerInterface
+	 * @var \Psr2\Log\LoggerInterface
 	 */
 	public $logger;
 
@@ -127,7 +127,7 @@ class ImageProcessor implements \Psr\Log\LoggerAwareInterface
 	}
 
 	/**
-	 * @param \Psr\Log\LoggerInterface
+	 * @param \Psr2\Log\LoggerInterface
 	 *
 	 * @return self
 	 */

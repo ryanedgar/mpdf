@@ -3,7 +3,7 @@
 namespace Mpdf\Http;
 
 use Mpdf\Mpdf;
-use Psr\Log\NullLogger;
+use Psr2\Log\NullLogger;
 
 class CurlHttpClientTest extends \Yoast\PHPUnitPolyfills\TestCases\TestCase
 {
